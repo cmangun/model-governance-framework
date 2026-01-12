@@ -1,0 +1,34 @@
+[project]
+name = "model-governance-framework"
+version = "1.0.0"
+description = "AI governance framework with bias detection, explainability, and model documentation"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Christopher Mangun", email = "cmangun@gmail.com"}
+]
+requires-python = ">=3.11"
+keywords = ["ai-governance", "fairness", "bias-detection", "explainability", "model-cards"]
+
+dependencies = [
+    "pydantic>=2.5.0",
+    "structlog>=24.1.0",
+    "numpy>=1.26.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "ruff>=0.1.14",
+]
+explainability = [
+    "shap>=0.44.0",
+    "lime>=0.2.0.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
