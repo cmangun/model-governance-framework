@@ -3,36 +3,36 @@
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Comprehensive AI governance framework for regulated industries with bias detection, fairness metrics, and model documentation.**
+Comprehensive AI governance framework for regulated industries with bias detection, fairness metrics, and model documentation.
 
-## 🎯 Business Impact
+## Business Impact
 
 - **FDA-ready** model documentation with automated model cards
 - **Bias detection** across protected demographic attributes
 - **Explainability** with SHAP and LIME integration
 - **Zero compliance violations** across $51M+ portfolio
 
-## ✨ Key Features
+## Key Features
 
-### ⚖️ Fairness & Bias Detection
+### Fairness and Bias Detection
 - **Demographic Parity**: Equal positive rates across groups
 - **Equalized Odds**: Equal TPR and FPR across groups
 - **Disparate Impact**: 4/5ths rule compliance
 - **Intersectional Analysis**: Multi-attribute fairness
 
-### 📊 Explainability
+### Explainability
 - SHAP value computation
 - LIME explanations
 - Feature importance analysis
 - Decision boundary visualization
 
-### 📝 Model Documentation
+### Model Documentation
 - Automated model cards (Google format)
 - Intended use documentation
 - Limitation and risk disclosure
 - Healthcare-specific compliance notes
 
-## 🚀 Quick Start
+## Quick Start
 
 ```python
 from src.fairness.bias_detector import BiasDetector, ProtectedAttribute
@@ -55,7 +55,7 @@ for violation in report.violations:
     print(f"  - {violation.metric}: {violation.description}")
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 model-governance-framework/
@@ -72,6 +72,6 @@ model-governance-framework/
 └── templates/
 ```
 
-## 👤 Author
+## Author
 
 **Christopher Mangun** - [github.com/cmangun](https://github.com/cmangun)
